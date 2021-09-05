@@ -40,7 +40,7 @@ def process_posts(fd_in, fd_out_train, fd_out_test, target_tag):
 
             num += 1
         except Exception as ex:
-            sys.stderr.write(f"Skipping the broken line {num}: {ex}\n")
+            sys.stderr.write("Skipping the broken line {num}: {ex}\n")
 
 
 os.makedirs(os.path.join("data", "prepared"), exist_ok=True)
